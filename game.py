@@ -1,5 +1,6 @@
 import string
 import random
+import requests
 
 class Game:
     def __init__(self):
@@ -14,6 +15,9 @@ class Game:
             return True
         else:
             return False
+    def is_dico(self,word):
+        return requests.get(f"https://wagon-dictionary.herokuapp.com/AZERTY").json()['found']
+
 
 if __name__ == "__main__":
     gg = Game()
@@ -21,4 +25,9 @@ if __name__ == "__main__":
         print("{} is the same {}".format(gg.word, gg.grid))
     else:
         print("{} is NOT the same {}".format(gg.word, gg.grid))
+
+    if gg.is_dico( gg.word ):
+        print("{} is in dico".format(gg.word))
+    else:
+        print("{} is NOT in dico".format(gg.word))
 
