@@ -1,6 +1,8 @@
 # tests/test_game.py
 import unittest
 import string
+import random
+import request
 from unittest.mock import patch
 from game import Game
 
