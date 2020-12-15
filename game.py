@@ -2,6 +2,18 @@ import string
 import random
 import requests
 
+class GameFlask:
+    def __init__(self):
+        self.grid = self.random_grid()
+    def random_grid(self):
+        return ''.join(random.choice(string.ascii_uppercase) for i in range(3))
+    def is_valid(self, word):
+        if self.grid == word:
+            return True
+        else:
+            return False
+    def is_dico(self,word):
+        return requests.get(f"https://wagon-dictionary.herokuapp.com/AZERTY").json()['found']
 
 class Game:
     def __init__(self):
