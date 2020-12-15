@@ -2,6 +2,7 @@ language: python
 python: 3.8
 dist: focal
 install:
-  - pip install -r requirements.txt --dev
+  - pip install -r requirements.txt
+    pip install --dev
 script:
   - pipenv run nosetests
