@@ -11,8 +11,8 @@ class TestGame(unittest.TestCase):
         new_game = Game()
         grid = new_game.grid
         word = new_game.word
-        foo = new_game.is_valid()
-        self.assertEqual(foo, False)
+        bar = new_game.is_valid()
+        self.assertEqual(bar, False)
 
 if __name__ == '__main__':
     unittest.main()
