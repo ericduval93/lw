@@ -2,7 +2,7 @@
 import unittest
 import string
 import random
-import request
+import requests
 from unittest.mock import patch
 from game import Game
 
