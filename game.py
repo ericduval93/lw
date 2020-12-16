@@ -13,7 +13,7 @@ class GameFlask:
         else:
             return False
     def is_dico(self,word):
-        return requests.get(f"https://wagon-dictionary.herokuapp.com/AZERTY").json()['found']
+        return requests.get(f"https://wagon-dictionary.herokuapp.com/{word}").json()['found']
 
 class Game:
     def __init__(self):
@@ -29,7 +29,7 @@ class Game:
         else:
             return False
     def is_dico(self,word):
-        return requests.get(f"https://wagon-dictionary.herokuapp.com/AZERTY").json()['found']
+        return requests.get(f"https://wagon-dictionary.herokuapp.com/{word}").json()['found']
 
 
 if __name__ == "__main__":
