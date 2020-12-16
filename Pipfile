@@ -9,6 +9,8 @@ flask = "*"
 requests = "*"
 
 [dev-packages]
+nose = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.8"
