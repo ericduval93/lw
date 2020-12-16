@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from game import GameFlask
+import requests
 
 app = Flask(__name__)
 
