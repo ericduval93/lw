@@ -1,0 +1,6 @@
+requirement.txt is for pip command
+Pipfile* is for pipenv command
+Procfile is for heroku command
+runtime.txt is for heroku command
+test_game.py is for Travis github
+.travis.yml is for Travis github
